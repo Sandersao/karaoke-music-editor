@@ -1,7 +1,7 @@
 {
-  "name": "edicao-musica-karaoke",
+  "name": "karaoke-music-editor",
   "version": "1.0.0",
-  "description": "A music editor for Karaoke songs",
+  "description": "A music editor for karaoke songs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
