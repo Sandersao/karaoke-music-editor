@@ -4,6 +4,7 @@
   "description": "A music editor for karaoke songs",
   "main": "index.js",
   "scripts": {
+    "start:dev": "echo started!",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
