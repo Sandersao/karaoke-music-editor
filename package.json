@@ -1,25 +1,26 @@
 {
-  "name": "karaoke-music-editor",
   "version": "1.0.0",
-  "description": "A music editor for karaoke songs",
-  "main": "index.js",
+  "description": "My webpack project",
+  "name": "webpack-project",
   "scripts": {
-    "start:dev": "echo started!",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "karaoke",
-    "edit",
-    "song"
-  ],
-  "author": "Sanderson de A. Rocha <sanduba753@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "lit": "^3.3.1"
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "serve": "webpack serve",
+    "watch": "webpack --watch"
   },
   "devDependencies": {
-    "@types/webpack": "^5.28.5",
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.4",
     "typescript": "^5.9.2",
-    "webpack": "^5.101.3"
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "lit": "^3.3.1"
   }
 }
