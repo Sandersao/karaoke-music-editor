@@ -1,0 +1,16 @@
+{
+  "name": "edicao-musica-karaoke",
+  "version": "1.0.0",
+  "description": "A music editor for Karaoke songs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "karaoke",
+    "edit",
+    "song"
+  ],
+  "author": "Sanderson de A. Rocha <sanduba753@gmail.com>",
+  "license": "MIT"
+}
