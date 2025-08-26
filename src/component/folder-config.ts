@@ -1,19 +1,24 @@
 import { LitElement, css, html } from 'lit';
-import { InputMetadata } from '../common/input-metadata';
+import { targetVal } from '../common/target-val'
+
 export class FolderConfig extends LitElement {
   static readonly styles = css``;
 
-  pathMeta = new InputMetadata(new Date())
+  path: string = null
 
   render() {
     return html`
         <h3>Fonder config</h3>
         <p>Please inform here the folder with your songs</p>
-        <input type="date" .value="${this.pathMeta.val()}" @input="${this.pathMeta.val}"/>
-        <button @click="${this.submit}">Submit</button>
+        <form @submit="${this.submit}">
+          <input type="text" .value="${this.path}" @input="${(e: InputEvent) => this.path = targetVal(e.target)}"/>
+          <button>Submit</button>
+        </form>
     `
   }
-  submit() {
-    console.log(this.pathMeta.val());
+
+  submit(e: SubmitEvent) {
+    e.preventDefault()
+    console.log(this.path)
   }
 }
