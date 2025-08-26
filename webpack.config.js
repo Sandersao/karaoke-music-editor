@@ -4,11 +4,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isProduction = process.env.NODE_ENV === 'development';
+const appConfig = {
+    environment: 
+        'production',
+        // 'development',
+}
+
+const isProduction = process.env.NODE_ENV === appConfig.environment;
 
 const stylesHandler = MiniCssExtractPlugin.loader;
-
-
 
 const config = {
     entry: './src/index.ts',
@@ -16,6 +20,7 @@ const config = {
         path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
+        historyApiFallback: true,
         open: false,
         host: 'localhost',
     },
