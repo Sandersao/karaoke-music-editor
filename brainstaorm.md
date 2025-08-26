@@ -1,0 +1,26 @@
+- front-end
+  - [ ] Video reproduction
+  - [ ] Audio reproduction
+    - [ ] Audio sincronizer based on video time changes
+  - [ ] Subtitle presentation
+    - [ ] Subtitle sicronizer based on video timing
+  - [ ] Tone graphics
+  - [ ] File upload in case of missing file
+    - [ ] Intuitive file upload system
+  - [ ] File replace in case of outdated or wrong file
+  - [ ] Songs folder navigation
+    - [ ] Folder navigation system
+    - [ ] Dir object triation
+  - [ ] Configuration screen on the begining
+    - [ ] Screen that shows the input for the musics folder in case this is not configured
+- backend
+  - [ ] Data structure read
+  - [ ] File upload system
+  - [ ] Creation of music Response
+    - [ ] Read of .txt data into Response structure
+    - [ ] Understand .txt data structure
+- general
+  - [ ] Segregation of the webservices
+    - [ ] FileSystemNavigation
+    - [ ] SongMenegmentSystem
+    - [ ] Reproduciton on frontend
