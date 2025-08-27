@@ -1,1 +1,1 @@
-- [ ] 
+- [ ] Implementing of electron for easyup the debug
