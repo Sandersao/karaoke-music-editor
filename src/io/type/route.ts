@@ -1,0 +1,1 @@
+export type Route = { path: string, component?: string, action?: () => any }
