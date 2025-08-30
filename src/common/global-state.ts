@@ -1,1 +1,4 @@
-export let musicDir: string
+type GlobalState = {
+    workDir?: string
+}
+export const globalState: GlobalState = {}
