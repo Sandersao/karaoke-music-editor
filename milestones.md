@@ -1,2 +1,5 @@
 - [ ] Implementing of electron for easyup the debug
-- [ ] Implementing of http request example
+- [ ] Implementing of http request structure
+- [ ] Implementing of default float message (error, success, danger)
+- [X] Implementing of folder selection service
+- [X] Implementing of folder selection screen
