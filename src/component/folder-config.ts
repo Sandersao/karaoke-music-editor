@@ -1,10 +1,14 @@
 import { LitElement, css, html } from 'lit';
 import { targetVal } from '../common/target-val'
+import { FolderService } from '../service/folder.service'
+import { HttpService } from '../service/http.service';
 
 export class FolderConfig extends LitElement {
   static readonly styles = css``;
 
   path: string = null
+
+  private readonly service: FolderService = new FolderService(new HttpService())
 
   render() {
     return html`
@@ -19,6 +23,9 @@ export class FolderConfig extends LitElement {
 
   submit(e: SubmitEvent) {
     e.preventDefault()
-    console.log(this.path)
+    if(!this.path){
+      throw new Error('Path must be ');
+    }
+    this.service.put({path: this.path})
   }
 }
